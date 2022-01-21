@@ -10,7 +10,6 @@
   "name": "project-2-pet-app",
   "version": "1.0.0",
   "main": "server.js",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/beggsaj/project-2-pet-app.git"
