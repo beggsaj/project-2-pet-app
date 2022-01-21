@@ -1,9 +1,25 @@
 {
   "dependencies": {
     "bcrypt": "^5.0.1",
+    "dotenv": "^14.2.0",
     "express": "^4.17.2",
-    "joi": "^17.5.0",
-    "mysql2": "^2.3.3",
-    "sequelize": "^6.13.0"
-  }
+    "joi": "^17.5.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "project-2-pet-app",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beggsaj/project-2-pet-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beggsaj/project-2-pet-app/issues"
+  },
+  "homepage": "https://github.com/beggsaj/project-2-pet-app#readme",
+  "description": ""
 }
