@@ -1,8 +1,16 @@
+const path = require('path');
 const Joi = require('joi');
 const express = require('express');
+
 const app = express();
+const PORT = process.env.PORT || 3000;
+
+const sequelize = require('./config/connection');
 
 app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+app.use(express.static(path.join(__dirname, 'public')));
+
 
 const postdata = [{
         id: 1,
@@ -59,7 +67,9 @@ app.post('/api/postdata', (req, res) => {
     res.send(blog);
 });
 
-const port = process.env.PORT || 3000;
 
-app.listen(port, () => console.log(`Listening on port ${port}...`));
+sequelize.sync({ force: false }).then(() => {
+    app.listen(PORT, () => console.log(`Listening on port ${PORT}...`));
+});
+
 
