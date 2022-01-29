@@ -1,47 +1,34 @@
-# project-2-pet-app
+## project-2-pet-app
 
 # The PawParrazi Project
-## A Social Media Application for Your Furry Pals
+## A Social Media Application for Canines
 
-This application uses a Node and Express back end and uses both GET and POST routes for retrieving and adding new data.
+This Social Media Application is for Man's Best Friend: Our Dogs. 
+It was created to post dog accounts and connect with other dog pals.
 
-Application has a folder structure that meets the MVC paradigm and uses Handlebars.js as the template engine.
+On the first page, there is a login form where the user can login or create an account.
+Once logged-in, the home page displays all of the current dog's social accounts. 
+Comments can be added under each profile.
+There is a log-out and a delete button available for when users are finished using the app.
 
-Application is backed by a MySQL database with a Sequelize ORM and protects API keys and sensitive information with environment variables.
 
-Application includes user authentication (express-session and cookies).
+### Features:
 
-Application uses at least one new library, package, or technology not covered in class.
+~ This application uses a Node and Express back-end and uses GET and POST routes for retrieving and adding new canine data.
 
-How We Met Project Requirements:
-You and your group will use everything you’ve learned over the past six weeks to create a real-world full-stack application that you’ll be able to showcase to potential employers. The user story and acceptance criteria will depend on the project that you create, but your project must fulfil the following requirements:
+~ The PawParrazi folder structure meets the MVC paradigm and uses Handlebars.js as the template engine.
 
-Use Node.js and Express.js to create a RESTful API.
+~ It uses MySQL database with the Sequelize ORMs and Handlebars.js as the templating engine.
 
-Use Handlebars.js as the templating engine.
+~ This application also includes user-authentication with express-session and cookies.
 
-Use MySQL and the Sequelize ORM for the database.
+## The PawParrazi Project is deployed with
+### Heroku:
+### GitHub:
 
-Have both GET and POST routes for retrieving and adding new data.
+Screenshot of Login Page:
 
-Be deployed using Heroku (with data).
+Screenshot of Main Page:
 
-Use at least one new library, package, or technology that we haven’t discussed.
 
-Have a polished UI.
-
-Be responsive.
-
-Be interactive (i.e., accept and respond to user input).
-
-Have a folder structure that meets the MVC paradigm.
-
-Include authentication (express-session and cookies).
-
-Protect API keys and sensitive information with environment variables.
-
-Have a clean repository that meets quality coding standards (file structure, naming conventions, follows best practices for class/id naming conventions, indentation, quality comments, etc.).
-
-Have a quality README (with unique name, description, technologies used, screenshot, and link to deployed application).
-
-## Created By Abigail, Chris, Greg, and Priscilla
+### Created By Abigail, Chris, Greg, and Priscilla
