@@ -74,7 +74,7 @@ textarea {
 }
 
 form > div {
-  margin-bottom: 2%;
+  margin-bottom: 1%;
 }
 
 form label {
@@ -114,8 +114,15 @@ header {
 main {
   flex: 1;
   padding: 2% 4%;
-}
+  flex-wrap: wrap;
 
+}
+html { 
+  scroll-behavior: smooth;
+}
+#new-user {
+  font-size: 2em;
+}
 .btn-no-style {
   background: none;
   border: none;
@@ -188,6 +195,9 @@ main {
 
 .post-page {
   padding: 10px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex-shrink: 2;
 }
 .past-posts {
   align-content: flex-start;
@@ -213,13 +223,21 @@ main {
   margin-bottom: 5%;
 }
 .login-page {
+  
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.signin-block {
   padding: 10px 0 2px 0;
   margin: 5px 0 3px 0;
   background-color: rgb(212, 245, 245);
-}
-.login-form .signup-form{
-  margin: 5px 0 5px 0;
-  
+  width: 100%;
+  margin: 5px;
+  flex: 2;
 }
 footer {
   border-top: 1px solid #ccc;

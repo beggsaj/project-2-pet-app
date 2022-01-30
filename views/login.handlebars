@@ -1,4 +1,8 @@
-<section class="login-page">
+<div class="login-page">
+  <div class="signin-block">
+    <a href="#new-user">New User? Sign up now!</a>
+  </div>
+<div class="signin-block">
 <form class="container-sm login-form">
   <h2>Returning Users</h2>
   <div class="mb-3 bg-success p-2 text-dark bg-opacity-25">
@@ -20,10 +24,11 @@
     <button type="submit" class="btn btn-outline-secondary" data-bs-toggle="button" autocomplete="off">Login</button>
   </div>
 </form>
-</section>
+</div>
 
-<section class="login-page">
-<form class="container-sm signup-form">
+<div class="signin-block">
+<form id="new-user" class="container-sm signup-form">
+  
   <h2>New Users</h2>
   <div class="mb-3 bg-success p-2 text-dark bg-opacity-25">
     <label for="username-signup" class="form-label" >
@@ -50,6 +55,7 @@
     <button type="submit" class="btn btn-outline-secondary" data-bs-toggle="button" autocomplete="off">Sign Up</button>
   </div>
 </form>
-</section>
+</div>
+</div>
 
 <script src="/javascript/login.js"></script>
