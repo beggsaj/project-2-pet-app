@@ -22,7 +22,7 @@ a:hover {
 }
 
 button {
-  background-color: #225ca3;
+  background-color: #0850a8;
   border: 0;
   padding: 1%;
   color: white;
@@ -30,6 +30,12 @@ button {
   transition: background-color .1s;
   cursor: pointer;
   border-radius: 5px;
+  border-color: gray;
+}
+.create-button {
+  background-color: white;
+  border-color: gray;
+  border-radius: 1px;
 }
 
 button:hover {
@@ -161,6 +167,25 @@ main {
   opacity: .6;
 }
 
+.post-page {
+  padding: 10px;
+}
+.past-posts {
+  align-content: flex-start;
+  flex-grow: inherit;
+  padding: 5px;
+  border: solid gray 2px;
+  border-style: outset;
+  margin-top: 10px;
+}
+
+.new-post-form {
+  align-content: flex-start;
+  flex-grow: inherit;
+  padding: 5px;
+  border: solid gray 2px;
+  border-style: outset;
+}
 .new-post-form input {
   width: 300px;
 }
