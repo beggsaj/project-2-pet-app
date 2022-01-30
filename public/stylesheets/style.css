@@ -13,24 +13,32 @@ body, html {
 a {
   background: none;
   border: none;
-  padding: 0;
+  padding: 0 10px 0 0;
   cursor: pointer;
   text-decoration: none;
   color: #225ca3;
   font-size: 100%;
   font-weight: bold;
   transition: color .1s;
-  margin-left: 16px;
+  margin: 10px;
 }
-h2 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bolder;
-  color: #264872;
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
 }
 a:hover {
   color: #3486eb;
   text-decoration: none;
 }
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  color: #264872;
+}
+
 
 button {
   text-decoration-line: none;
@@ -38,13 +46,9 @@ button {
   padding: 1%;
   color: white;
   font-weight: bold;
-  transition: background-color .1s;
+  background-color: #225ca3;
   cursor: pointer;
   border-radius: 5px;
-  border-color: gray;
-}
-.create-button {
-  background-color: #264872;
   
 }
 
@@ -107,8 +111,17 @@ header {
   font-size: 2.5em;
   color: Black;
   font-weight: bold;
-  text-shadow: 5px 5px 8px #9aabc2;
+  text-shadow: 3px 3px 5px #9aabc2;
   float: left;
+}
+
+/*nav on main homepage*/
+nav {
+  margin-right: 5px;
+  padding: 0;
+  flex-wrap: nowrap;
+  flex: 1;
+  justify-content: space-between;
 }
 
 main {
@@ -120,9 +133,9 @@ main {
 html { 
   scroll-behavior: smooth;
 }
-#new-user {
-  font-size: 2em;
-}
+
+
+
 .btn-no-style {
   background: none;
   border: none;
@@ -159,6 +172,17 @@ html {
   font-size: 90%;
   color: #7d7d7d;
 }
+.post-list {
+  align-content: flex-start;
+  flex-grow: inherit;
+  border: solid gray 2px;
+  border-style: outset;
+  padding: 10px;
+  margin: 5px;
+  background-color: rgb(212, 245, 245);
+  width: 100%;
+  flex: 2;
+}
 
 .edit-link {
   display: block;
@@ -175,7 +199,7 @@ html {
 }
 
 .comment-form {
-  margin-bottom: 5%;
+  margin-bottom: 2%;
 }
 
 .comment {
@@ -198,6 +222,7 @@ html {
   flex-wrap: wrap;
   flex-direction: column;
   flex-shrink: 2;
+  background-color: rgb(212, 245, 245);
 }
 .past-posts {
   align-content: flex-start;
@@ -220,7 +245,9 @@ html {
 }
 
 .edit-post-form {
-  margin-bottom: 5%;
+  margin-bottom: 2%;
+  padding: 5px;
+  border-bottom: 2px solid rgb(113, 123, 133);
 }
 .login-page {
   
@@ -233,20 +260,26 @@ html {
 
 .signin-block {
   padding: 10px 0 2px 0;
-  margin: 5px 0 3px 0;
+  margin: 5px 0 10px 0;
   background-color: rgb(212, 245, 245);
   width: 100%;
-  margin: 5px;
   flex: 2;
 }
 footer {
   border-top: 1px solid #ccc;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   padding: 1%;
   font-size: 110%;
 }
-@media screen and (max-width: 800px) {
+h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: Black;
+  font-weight: bolder;
+  text-shadow: 3px 3px 8px #9aabc2;
+  float: left;
+}
+@media screen and (max-width: 970px) {
   body {
     flex-wrap: wrap;
   }
