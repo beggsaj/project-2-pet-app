@@ -11,18 +11,29 @@ body, html {
 }
 
 a {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
   text-decoration: none;
   color: #225ca3;
+  font-size: 100%;
   font-weight: bold;
   transition: color .1s;
+  margin-left: 16px;
 }
-
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  color: #264872;
+}
 a:hover {
   color: #3486eb;
+  text-decoration: none;
 }
 
 button {
-  background-color: #0850a8;
+  text-decoration-line: none;
   border: 0;
   padding: 1%;
   color: white;
@@ -33,9 +44,8 @@ button {
   border-color: gray;
 }
 .create-button {
-  background-color: white;
-  border-color: gray;
-  border-radius: 1px;
+  background-color: #264872;
+  
 }
 
 button:hover {
@@ -64,7 +74,7 @@ textarea {
 }
 
 form > div {
-  margin-bottom: 2%;
+  margin-bottom: 1%;
 }
 
 form label {
@@ -85,18 +95,34 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1%;
+  padding: .5% 1%;
+  flex-shrink: 1;
 }
-
-header h1 {
-  font-size: 1em;
+.header img{
+  position: relative;
+  width: 60px;
+}
+.logo {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2.5em;
+  color: Black;
+  font-weight: bold;
+  text-shadow: 5px 5px 8px #9aabc2;
+  float: left;
 }
 
 main {
   flex: 1;
   padding: 2% 4%;
-}
+  flex-wrap: wrap;
 
+}
+html { 
+  scroll-behavior: smooth;
+}
+#new-user {
+  font-size: 2em;
+}
 .btn-no-style {
   background: none;
   border: none;
@@ -169,6 +195,9 @@ main {
 
 .post-page {
   padding: 10px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex-shrink: 2;
 }
 .past-posts {
   align-content: flex-start;
@@ -193,11 +222,52 @@ main {
 .edit-post-form {
   margin-bottom: 5%;
 }
+.login-page {
+  
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  
+}
 
+.signin-block {
+  padding: 10px 0 2px 0;
+  margin: 5px 0 3px 0;
+  background-color: rgb(212, 245, 245);
+  width: 100%;
+  margin: 5px;
+  flex: 2;
+}
 footer {
   border-top: 1px solid #ccc;
   display: flex;
   justify-content: center;
   padding: 1%;
   font-size: 110%;
+}
+@media screen and (max-width: 800px) {
+  body {
+    flex-wrap: wrap;
+  }
+  header {
+    flex-direction: column;
+    
+  }
+  .header img {
+      width: 30px;
+      flex-shrink: 2;
+  }
+    
+  
+}
+@media screen and (max-width: 480px) {
+  .header img {
+    width: 20px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .header img {
+    width: 18px;
+  }
 }
