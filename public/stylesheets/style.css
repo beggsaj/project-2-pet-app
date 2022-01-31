@@ -119,9 +119,9 @@ header {
 nav {
   margin-right: 5px;
   padding: 0;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   flex: 1;
-  justify-content: space-between;
+  align-items: flex-end;
 }
 
 main {
